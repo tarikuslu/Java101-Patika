@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Üçgenin 1. kenar uzunluðunu giriniz");
+		int k1 = scanner.nextInt();
+		
+		System.out.println("Üçgenin 2. kenar uzunluðunu giriniz");
+		int k2 = scanner.nextInt();
+		
+		System.out.println("Üçgenin 3. kenar uzunluðunu giriniz");
+		int k3 = scanner.nextInt();
+		
+		double u = (k1 + k2 + k3) / 2;
+		double cevre = 2 * u;
+		
+		double alan = u * (u - k1) * (u - k2) * (u - k3);
+		
+		System.out.println("Alan: " + alan);
+		System.out.println("Çevre " + cevre);
+	}
+}
