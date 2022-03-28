@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Gidilecek mesafe km cinsinden");
+		int km = scanner.nextInt();
+		while (km <= 0) {
+			System.out.println("KM Pozitif bir sayý olmalý!");
+			km = scanner.nextInt();
+		}
+		
+		System.out.println("Yaþýnýzý giriniz");
+		int yas = scanner.nextInt();
+		while (yas <= 0) {
+			System.out.println("Yaþ Pozitif bir sayý olmalý!");
+			yas = scanner.nextInt();
+		}
+		
+		System.out.println("Yolculuk tipini seciniz 1/2");
+		int tip = scanner.nextInt();
+		while (tip !== 1 || tip !== 2) {
+			System.out.println("Yolculuk tipi 1/2 den baska olamaz");
+		tip = scanner.nextInt();
+		}
+	}
+
+}

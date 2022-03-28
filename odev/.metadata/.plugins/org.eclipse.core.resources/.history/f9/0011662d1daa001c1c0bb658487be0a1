@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Lütfen fizik notunuzu giriniz");
+		int fizikNotu = scanner.nextInt();
+		
+		System.out.println("Lütfen kimya notunuzu giriniz");
+		int kimyaNotu = scanner.nextInt();
+		
+		System.out.println("Lütfen Türkçe notunuzu giriniz");
+		int turkceNotu = scanner.nextInt();
+		
+		System.out.println("Lütfen tarih notunuzu giriniz");
+		int tarihNotu = scanner.nextInt();
+		
+		System.out.println("Lütfen müzik notunuzu giriniz");
+		int muzikNotu = scanner.nextInt();
+
+		int toplamNot = fizikNotu + kimyaNotu + turkceNotu + tarihNotu + muzikNotu;
+		double ortalamaNot = toplamNot / 5;
+		
+		System.out.println("Sýnav notlarý ortalamasý:" + ortalamaNot);
+		
+		String gectiMi = ortalamaNot > 60 ? "Sýnýfý geçti" : "Sýnýfta kaldý";
+	}
+
+}

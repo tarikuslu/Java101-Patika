@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="ArtikYilHesaplama/src"/>
+	<classpathentry kind="src" path="CinZodyagiHesaplama/src"/>
+	<classpathentry kind="src" path="DaireAlaniVeCevresiHesaplama/src"/>
+	<classpathentry kind="src" path="DikUcgendeHipetenus/src"/>
+	<classpathentry kind="src" path="HavaSicakliginaGoreEtkinlik/src"/>
+	<classpathentry kind="src" path="Hello World/src"/>
+	<classpathentry kind="src" path="HesapMakinesi/src"/>
+	<classpathentry kind="src" path="KDVTutariHesaplayanProgram/src"/>
+	<classpathentry kind="src" path="KucuktenBuyugeSiralama/src"/>
+	<classpathentry kind="src" path="KullaniciGirisi/src"/>
+	<classpathentry kind="src" path="ManavKasaProgrami/src"/>
+	<classpathentry kind="src" path="NotOrtalamasiHesaplayanProgram/src"/>
+	<classpathentry kind="src" path="PratikBurclar/src"/>
+	<classpathentry kind="src" path="SınıfıGecmeDurumu/src"/>
+	<classpathentry kind="src" path="TaksimetreUcretiHesaplama/src"/>
+	<classpathentry kind="src" path="UcakBiletiFiyatiHesaplama/src"/>
+	<classpathentry kind="src" path="VucutKitleEndeksi/src"/>
+	<classpathentry kind="output" path="ArtikYilHesaplama/bin"/>
+</classpath>

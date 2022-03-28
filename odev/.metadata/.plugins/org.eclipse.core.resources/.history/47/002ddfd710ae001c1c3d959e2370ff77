@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Sayý giriniz: ");
+		int sayi = scanner.nextInt();
+		
+		System.out.println(asalBul(sayi));
+	
+	}
+
+	
+	static int asalBul(int s1) {
+		boolean asalMi = true;
+		if (s1 == 2) {
+			return 0;
+		} else {
+			if (asalBul(s1 - 1) % 2 == 0) {
+				asalMi = false;
+			} 
+		}
+		
+		if (asalMi) {
+			return s1;
+		} else {
+			return -1;
+		}
+	}
+}

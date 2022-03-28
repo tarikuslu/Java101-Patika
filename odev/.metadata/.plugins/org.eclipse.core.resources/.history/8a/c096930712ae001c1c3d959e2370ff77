@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Sayý giriniz: ");
+		int sayi = scanner.nextInt();
+		
+		System.out.println(asalBul(sayi));
+	
+	}
+
+	
+	static int asalBul(int s1) {
+	if (s1 == 1) {
+		return 1;
+	} 
+	int sayac = 0;
+	
+	asalBul(s1 - 1) % 2 
+	}
+}

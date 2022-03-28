@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Hava sýcaklýðýný giriniz: (santigrat)");
+		double havaSicakligi = scanner.nextDouble();
+		
+		if (havaSicakligi > 25 || havaSicakligi >= 5 ) {
+			System.out.println("Yüzme Etkinliði");
+		} else if (havaSicakligi >= 15 && havaSicakligi <= 25) {
+			if (havaSicakligi >= 5 && havaSicakligi <= 15) {
+				System.out.println("Sinema Etkinliði");
+			} else {
+				System.out.println("Piknik Etkinliði");
+			}
+		} else {
+			System.out.println("Kayak Etkinliði");
+		}
+		
+	}
+
+}

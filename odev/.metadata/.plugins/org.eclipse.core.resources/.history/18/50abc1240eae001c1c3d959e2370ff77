@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("taban sayý giriniz: ");
+		double tabanSayi = scanner.nextInt();
+		
+		System.out.println("üs giriniz: ");
+		double usSayi = scanner.nextInt();
+		
+		System.out.println(usAlma(tabanSayi, usSayi));
+	}
+
+	
+	static double usAlma(double taban, int double) {
+		if (us == 1) {
+			return Math.pow(taban, 1);
+		}
+		
+		usAlma(taban, us - 1);
+	}
+}

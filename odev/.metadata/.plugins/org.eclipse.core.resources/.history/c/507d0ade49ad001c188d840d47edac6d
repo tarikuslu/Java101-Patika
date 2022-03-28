@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Bir sayý giriniz: ");
+		int sayi = scanner.nextInt();
+		int k;
+		for(int i = 0; i < sayi; i++) {
+			for(k = sayi; k>0; k--) {
+				System.out.print("\t".repeat(k));
+				System.out.print(k);
+				
+				break;
+			}
+			
+			for(int j = 0; j<=i; j++ ) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}

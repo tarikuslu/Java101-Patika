@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Sayý giriniz");
+		int sayi = scanner.nextInt();
+		int prev;
+		int first = 0;
+		int sum = 0;
+		for(int i = 1; i<=sayi; i++) {
+			if (i == 1) {
+				sum = i+first;
+				System.out.print(sum + " ");
+			} else {
+				prev = i-1;
+				sum = prev + i;
+				System.out.print(sum + " ");
+			}
+			
+		}
+	}
+
+}

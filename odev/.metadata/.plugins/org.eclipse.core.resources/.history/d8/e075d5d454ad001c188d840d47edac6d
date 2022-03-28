@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Kaç adet sayý gireceksiniz? ");
+		int adet = scanner.nextInt();
+		int buyuk = 0;
+		int kucuk = 0;
+		for(int i = 1; i<=adet; i++) {
+			System.out.println(i + ". sayýyý giriniz: ");
+			int giris = scanner.nextInt();
+			
+			if (i == 1) {
+				buyuk = giris;
+			} else {
+				if (giris > buyuk) {
+					buyuk = giris;
+				} else if( giris < buyuk) {
+					kucuk = giris;
+				}
+			}
+		}
+		
+		System.out.println("buyuk: " + buyuk);
+		System.out.println("kucuk: " + kucuk);
+		
+
+	}
+
+}

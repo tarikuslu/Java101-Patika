@@ -1,0 +1,24 @@
+import java.util.Iterator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		boolean asalMi = true;
+		for(int i = 100; i>0; i--) {
+			System.out.println("dsfdsfadsfads");
+			for(int j = 1; j<i; j++) {
+				if (i % j == 0) {
+					asalMi = false;
+					break;
+				} 
+				
+			}
+			if (asalMi) {
+				System.out.println(i);
+			}
+			
+		}
+
+	}
+
+}
