@@ -1,0 +1,47 @@
+import java.util.Random;
+
+public class MineSweeper {
+	int rowNumber, colNumber;
+	
+	public MineSweeper(int rowNumber, int colNumber) {
+		this.rowNumber = rowNumber;
+		this.colNumber = colNumber;
+		
+	}
+	
+	int mineCount = rowNumber * colNumber / 4;
+	char[][] mineArr;
+	Random rand = new Random();
+	 void run() {
+		  mineArr = new char[rowNumber][colNumber];
+		for(int i = 0; i<rowNumber; i++) {
+			for(int j = 0; j<colNumber; j++) {
+					mineArr[i][j] = '-';
+			}
+		}
+		plantMines(mineArr);
+		for(int i = 0; i<this.rowNumber; i++) {
+			for(int j = 0; j<this.colNumber; j++) {
+				System.out.print(mineArr[i][j]);
+			}
+			System.out.println();
+		}	
+	}
+	
+	 void plantMines(char [][] mineArr) {
+		
+		while(mineCount > 0) {
+			int randRow = rand.nextInt(this.rowNumber);
+			int randCol = rand.nextInt(this.colNumber);
+			
+			if(mineArr[randRow][randCol] != '*') {
+				mineArr[randRow][randCol] = '*';
+				mineCount--;
+			}
+						
+		}
+	}
+	
+	
+	
+}
